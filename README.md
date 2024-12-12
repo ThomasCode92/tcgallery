@@ -1,6 +1,20 @@
-# Create T3 App
+# tcGallery - The Modern React Tutorial
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+
+## Todo List
+
+- [ ] Make it Deploy (to Vercel)
+- [ ] Scaffold Basic UI with Mock Data
+- [ ] Set Up a Database (Vercel Postgres)
+- [ ] Attach Database to UI
+- [ ] Add Authentication (w/ clerk)
+- [ ] Add image upload
+- [ ] Error Management (w/ Sentry)
+- [ ] Routing/Image Page (parallel route)
+- [ ] Delete Button (w/ Server Actions)
+- [ ] Analytics ( w/ posthog)
+- [ ] Ratelimiting (w/ upstash)
 
 ## What's next? How do I make an app with this?
 
