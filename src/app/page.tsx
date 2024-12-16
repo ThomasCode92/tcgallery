@@ -1,5 +1,7 @@
 import { db } from "~/server/db";
 
+export const dynamic = "force-dynamic";
+
 // Images are hosted on uploadthing.com
 const mockUrls = [
   "https://utfs.io/f/reMSMTRIWajNKW1mEfcmV0Mo2UQRkbnHlgptwvd3ycIESFKu",
