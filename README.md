@@ -9,8 +9,9 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Tidy Up Build Process
 - [x] Set Up a Database (Vercel Postgres)
 - [x] Attach Database to UI
-- [ ] Add Authentication (w/ clerk)
+- [x] Add Authentication (w/ clerk)
 - [ ] Add image upload
+- [ ] "taint" (server-only)
 - [ ] Error Management (w/ Sentry)
 - [ ] Routing/Image Page (parallel route)
 - [ ] Delete Button (w/ Server Actions)
