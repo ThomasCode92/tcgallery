@@ -3,6 +3,7 @@ import { type Metadata } from "next";
 
 import TopNav from "~/components/TopNav";
 
+import "@uploadthing/react/styles.css";
 import { GeistSans } from "geist/font/sans";
 import "~/styles/globals.css";
 
