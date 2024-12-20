@@ -10,7 +10,7 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Set Up a Database (Vercel Postgres)
 - [x] Attach Database to UI
 - [x] Add Authentication (w/ clerk)
-- [ ] Add image upload
+- [x] Add image upload
 - [ ] "taint" (server-only)
 - [ ] Use Next Image Component
 - [ ] Error Management (w/ Sentry)

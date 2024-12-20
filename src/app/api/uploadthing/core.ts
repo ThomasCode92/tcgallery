@@ -21,7 +21,9 @@ export const ourFileRouter = {
       console.log("Upload complete for userId:", metadata.userId);
       console.log("file url", file.url);
 
-      await db.insert(images).values({ name: file.name, url: file.url });
+      await db
+        .insert(images)
+        .values({ userId: metadata.userId, name: file.name, url: file.url });
 
       return { uploadedBy: metadata.userId };
     }),
