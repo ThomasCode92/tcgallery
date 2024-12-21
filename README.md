@@ -11,7 +11,7 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Attach Database to UI
 - [x] Add Authentication (w/ clerk)
 - [x] Add image upload
-- [ ] "taint" (server-only)
+- [x] "taint" (server-only)
 - [ ] Use Next Image Component
 - [ ] Error Management (w/ Sentry)
 - [ ] Routing/Image Page (parallel route)
