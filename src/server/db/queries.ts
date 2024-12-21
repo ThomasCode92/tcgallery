@@ -12,5 +12,6 @@ export async function getImages() {
   return db.query.images.findMany({
     where: (model, { eq }) => eq(model.userId, user.userId),
     orderBy: (model, { desc }) => desc(model.id),
+    columns: { id: true, name: true, url: true },
   });
 }
