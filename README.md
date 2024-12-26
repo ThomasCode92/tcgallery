@@ -12,11 +12,11 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Add Authentication (w/ clerk)
 - [x] Add image upload
 - [x] "taint" (server-only)
-- [ ] Use Next Image Component
-- [ ] Error Management (w/ Sentry)
-- [ ] Routing/Image Page (parallel route)
+- [x] Use Next Image Component
+- [x] Error Management (w/ Sentry)
+- [ ] Routing/ Image Page (parallel route)
 - [ ] Delete Button (w/ Server Actions)
-- [ ] Analytics ( w/ posthog)
+- [ ] Analytics (w/ posthog)
 - [ ] Ratelimiting (w/ upstash)
 
 ## What's next? How do I make an app with this?
