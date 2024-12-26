@@ -23,7 +23,6 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "explorer.compactFolders": false,
 
   // TS/JS Specific Config
   "typescript.tsdk": "node_modules/typescript/lib",

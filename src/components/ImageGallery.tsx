@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { getImages } from "~/server/db/queries";
 
@@ -14,10 +15,12 @@ export default async function ImageGallery() {
       )}
       {images.map((image, idx) => (
         <li key={image.id + "-" + idx}>
-          <div className="relative h-48 w-48">
-            <Image src={image.url} alt={`Image ${idx}`} fill />
-          </div>
-          <span className="mt-2">{image.name}</span>
+          <Link href={`/img/${image.id}`}>
+            <div className="relative h-48 w-48">
+              <Image src={image.url} alt={`Image ${idx}`} fill />
+            </div>
+            <span className="mt-2">{image.name}</span>
+          </Link>
         </li>
       ))}
     </ul>
