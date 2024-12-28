@@ -7,7 +7,7 @@ export default async function ImageGallery() {
   const images = await getImages();
 
   return (
-    <ul className="flex flex-wrap justify-center gap-4">
+    <ul className="flex flex-wrap justify-center gap-4 p-4">
       {images.length === 0 && (
         <p className="mt-24 h-full w-full text-center text-2xl">
           No images found, upload one above
