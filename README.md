@@ -14,7 +14,7 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] "taint" (server-only)
 - [x] Use Next Image Component
 - [x] Error Management (w/ Sentry)
-- [ ] Routing/ Image Page (parallel route)
+- [x] Routing/ Image Page (parallel route)
 - [ ] Delete Button (w/ Server Actions)
 - [ ] Analytics (w/ posthog)
 - [ ] Ratelimiting (w/ upstash)
