@@ -14,10 +14,15 @@ export default async function ImageGallery() {
         </p>
       )}
       {images.map((image, idx) => (
-        <li key={image.id + "-" + idx}>
+        <li key={image.id + "-" + idx} className="w-48 truncate">
           <Link href={`/img/${image.id}`}>
-            <div className="relative h-48 w-48">
-              <Image src={image.url} alt={`Image ${idx}`} fill />
+            <div className="relative h-48 w-full">
+              <Image
+                src={image.url}
+                alt={`Image ${idx}`}
+                className="object-cover"
+                fill
+              />
             </div>
             <span className="mt-2">{image.name}</span>
           </Link>

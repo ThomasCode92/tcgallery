@@ -10,11 +10,13 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Set Up a Database (Vercel Postgres)
 - [x] Attach Database to UI
 - [x] Add Authentication (w/ clerk)
-- [x] Add image upload
+- [x] Add image upload (w/ UploadThing)
 - [x] "taint" (server-only)
 - [x] Use Next Image Component
 - [x] Error Management (w/ Sentry)
 - [x] Routing/ Image Page (parallel route)
+- [x] Custom Upload Button (w/ UploadThing Input)
+- [ ] Add Toast Message (w/ chadcn)
 - [ ] Delete Button (w/ Server Actions)
 - [ ] Analytics (w/ posthog)
 - [ ] Ratelimiting (w/ upstash)
