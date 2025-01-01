@@ -5,15 +5,24 @@ import { Fragment } from "react";
 import { toast } from "sonner";
 
 import { useUploadThingInputProps } from "~/hooks/useUploadThingInputProps";
+import LoadingSpinner from "~/icons/LoadingSpinner";
+import UploadIcon from "~/icons/UploadIcon";
+
+function makeUploadToast() {
+  return toast(
+    <div className="flex items-center gap-2">
+      <LoadingSpinner />
+      <span className="text-lg">Uploading...</span>
+    </div>,
+    { id: "upload-begin", duration: 100000 },
+  );
+}
 
 export default function SimpleUploadButton() {
   const router = useRouter();
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin() {
-      toast("Uploading...", {
-        id: "upload-begin",
-        duration: 100000,
-      });
+      makeUploadToast();
     },
     onClientUploadComplete() {
       toast.dismiss("upload-begin");
@@ -26,28 +35,9 @@ export default function SimpleUploadButton() {
   return (
     <Fragment>
       <label htmlFor="upload-btn" className="cursor-pointer">
-        <UploadSVG />
+        <UploadIcon />
       </label>
       <input id="upload-btn" type="file" className="sr-only" {...inputProps} />
     </Fragment>
-  );
-}
-
-function UploadSVG() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="size-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5"
-      />
-    </svg>
   );
 }

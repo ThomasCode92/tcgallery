@@ -17,7 +17,7 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Routing/ Image Page (parallel route)
 - [x] Custom Upload Button (w/ UploadThing Input)
 - [x] ChadUIify (specifically toasts)
-- [ ] Add Toast Message (w/ chadcn)
+- [x] Add Toast Message (w/ chadcn)
 - [ ] Delete Button (w/ Server Actions)
 - [ ] Analytics (w/ posthog)
 - [ ] Ratelimiting (w/ upstash)
