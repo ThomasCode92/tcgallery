@@ -2,13 +2,23 @@
 
 import { useRouter } from "next/navigation";
 import { Fragment } from "react";
+import { toast } from "sonner";
 
 import { useUploadThingInputProps } from "~/hooks/useUploadThingInputProps";
 
 export default function SimpleUploadButton() {
   const router = useRouter();
   const { inputProps } = useUploadThingInputProps("imageUploader", {
+    onUploadBegin() {
+      toast("Uploading...", {
+        id: "upload-begin",
+        duration: 100000,
+      });
+    },
     onClientUploadComplete() {
+      toast.dismiss("upload-begin");
+      toast("Upload complete!");
+
       router.refresh();
     },
   });

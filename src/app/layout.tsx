@@ -4,7 +4,7 @@ import { type Metadata } from "next";
 import { extractRouterConfig } from "uploadthing/server";
 
 import TopNav from "~/components/TopNav";
-
+import Toaster from "~/components/ui/sonner";
 import { ourFileRouter } from "./api/uploadthing/core";
 
 import "@uploadthing/react/styles.css";
@@ -32,6 +32,7 @@ export default function RootLayout({
           </div>
           {modal}
           <div id="modal-root" />
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
