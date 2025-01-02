@@ -20,10 +20,14 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "always"
   },
-  "editor.wordWrapColumn": 80,
-  "editor.wordWrap": "bounded",
   "files.associations": {
     "*.css": "tailwindcss"
+  },
+
+  // File Specific Config
+  "[markdown]": {
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "bounded"
   },
 
   // TS/JS Specific Config
