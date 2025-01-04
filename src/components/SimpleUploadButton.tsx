@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { usePostHog } from "posthog-js/react";
 import { Fragment } from "react";
 import { toast } from "sonner";
 
@@ -20,8 +21,11 @@ function makeUploadToast() {
 
 export default function SimpleUploadButton() {
   const router = useRouter();
+  const posthog = usePostHog();
+
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin() {
+      posthog.capture("upload_begin");
       makeUploadToast();
     },
     onClientUploadComplete() {
