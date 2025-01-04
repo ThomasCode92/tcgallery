@@ -1,4 +1,4 @@
 {
-  "ignoreWords": ["uploadthing", "sonner"],
+  "ignoreWords": ["uploadthing", "sonner", "posthog"],
   "words": []
 }
