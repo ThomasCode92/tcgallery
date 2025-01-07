@@ -1,8 +1,13 @@
 # tcGallery - The Modern React Tutorial
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A cutting-edge image gallery application built with the latest tools and technologies from the modern React ecosystem. 📸🎞️<br />This project is inspired by a YouTube tutorial of [Theo](https://x.com/theo). Check out [this link](https://www.youtube.com/watch?v=d5x0JCZbAJs) to watch the full video.
 
-## Todo List
+## About this Project
+
+This project leverages the power of the [T3 Stack](https://create.t3.gg/) and was bootstrapped using `create-t3-app`. It demonstrates a modern, high-performance approach to application development, showcasing a seamless integration of state-of-the-art tools and technologies. The primary technologies utilized in this project include [Next.js](https://nextjs.org), [Drizzle](https://orm.drizzle.team) and [Tailwind CSS](https://tailwindcss.com).
+
+<details>
+<summary><b>Tutorial Topics</b></summary>
 
 - [x] Make it Deploy (to Vercel)
 - [x] Scaffold Basic UI with Mock Data
@@ -21,21 +26,19 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - [x] Delete Button (w/ Server Actions)
 - [x] Analytics (w/ posthog)
 - [x] Ratelimiting (w/ upstash)
+</details>
 
-## What's next? How do I make an app with this?
+### What's next?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+For those unfamiliar with the technologies used in this project, referring to their respective documentation is recommended. For further assistance, consider joining the [t3 Discord](https://t3.gg/discord) and ask for help. Here are some ideas to add to the project:
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- Fix the page layout for images of different resolutions
+- "Selecting" images on the gallery page
+- "infinite scroll"
+- Folders/albums
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
+<details>
+<summary><b>Learn More</b></summary>
 
 To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
@@ -44,6 +47,4 @@ To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the fo
 
 You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
 
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+</details>
